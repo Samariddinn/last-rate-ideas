@@ -1,0 +1,23 @@
+<h2 mat-dialog-title>My Ideas</h2>
+<mat-dialog-content>
+  <form class="w-full">
+  <mat-form-field class="w-full">
+    <mat-label>Favorite Ideas</mat-label>
+    <mat-select  name="food">
+      @for (food of [1,2,3]; track food) {
+        <mat-option [value]="food.valueOf">{{food}}</mat-option>
+      }
+    </mat-select>
+  </mat-form-field>
+
+
+  <mat-form-field class="w-full">
+    <mat-label>Address 2</mat-label>
+    <textarea rows="3" matInput></textarea>
+  </mat-form-field>
+ </form>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button (click)="dialogRef.close()">Cancel</button>
+  <button mat-button>Add Idea</button>
+</mat-dialog-actions>

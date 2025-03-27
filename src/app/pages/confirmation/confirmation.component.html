@@ -1,0 +1,30 @@
+<div class="w-full h-full flex justify-center items-center">
+    <div class=" flex flex-col justify-center items-center border border-gray-200 border-solid w-[570px] rounded-[16px] py-[32px] px-[24px]">
+      <div class="confirm-icon">
+        <mat-icon class="!min-w-[36px]" svgIcon="confirm-email">  </mat-icon>
+      </div>
+
+      <div class="my-3 mb-6  border-b border-solid border-[#D0D5DD]">
+        <h2 class="text-[1.5rem] text-[#101828] text-center">
+            Enter the password that was sent to your email address
+        </h2>
+
+      <div class="w-[75%] pb-4 text-center m-auto">
+
+          <span class="text-center text-[.875rem] text-[#475467]">
+              We sent a 4-digit code to the e-mail address gmail.com. Please enter it below.
+            </span>
+        </div>
+
+      </div>
+        <div>
+            <app-input-group />
+        </div>
+
+        <span class=" mx-[30px] text-[0.875rem] text-[#475467]  custom-margin" >Didn't receive a code? <a href="#" class="!text-blue-700">Resent new code</a></span>
+
+        <div class="w-full h-[1px] bg-[#D0D5DD]"></div>
+
+        <button mat-ripple class=" mt-[15px] bg-[#02BF67] text-white w-full py-[10px] px-[18px] rounded-md">Login</button>
+    </div>
+</div>

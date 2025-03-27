@@ -1,0 +1,28 @@
+@use '@angular/material' as mat;
+
+
+:root {
+  .custom-icon-button {
+    @apply  rounded-md !text-gray-800;
+  @include mat.button-overrides((
+    hover-state-layer-opacity: 0,
+    pressed-state-layer-opacity: 0
+  ));
+  }}
+
+.active-btn {
+  background-color: #02BF67 !important;
+  color: #fff;
+}
+
+.secondary-custom-btn {
+  @apply bg-[#F2F4F7] py-[8px] px-[20px] !important;
+}
+
+.reaction-active {
+  @apply bg-[#02BF67]  !important;
+
+  span {
+    @apply text-white !important;
+  }
+}

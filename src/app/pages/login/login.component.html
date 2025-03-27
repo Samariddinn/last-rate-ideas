@@ -1,0 +1,44 @@
+<div class="m-5 overflow-x-hidden h-full w-full ">
+    <form class=" max-w-[100%] gap-[60px] flex items-center w-full h-full">
+        <div class="w-full p-[48px] grid items-center">
+          <div class="flex flex-col gap-1">
+              <h1 class="text-gray-700 text-[2.1rem]">Log in to your account</h1>
+              <span class="text-gray-600">
+                  Enter your email address and pasword to login
+              </span>
+          </div>
+
+          <div class="flex flex-col max-w-[100%]  my-[25px]">
+            <app-input class="mb-3" [placeholder]="'Enter your username or email'" />
+            <app-input [type]="'password'"  [placeholder]="'Enter your password'"/>
+          
+            <span class="text-right mt-1 text-blue-600 text-[0.875rem]">forgot password</span>
+          </div>
+
+          
+          <button type="button" mat-button class=" max-w-[100%] !bg-[#02BF67] !text-white !rounded-lg">Login</button>
+
+
+          <div class="bg-gray-300 w-[70%] m-auto h-[1px] my-7 relative">
+             <span class="text-gray-400 px-[5px] absolute bg-white  left-[45%]   top-[-12px]">or</span>
+          </div>
+
+          <div class="flex items-center gap-2 justify-center text-[.9rem]">
+            <span class="text-gray-500">Don't you have an account?</span>
+            <a href="#" class="text-blue-600">Sign up</a>
+          </div>
+
+        </div>
+
+        <div class="h-full">
+           <div class="login-bg relative"> 
+              <img class="login-bg-el max-w-full relative" src="images/login-bg.png " alt="">
+          </div>
+
+          <div>
+            <img src="images/login-grid.jpg" class="absolute max-w-full max-h-full  right-[10%] top-0 login-grid" alt="">
+          </div>
+        </div>
+        <!-- </div> -->
+    </form>
+</div>

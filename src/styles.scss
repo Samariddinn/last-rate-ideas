@@ -1,0 +1,57 @@
+/* You can add global styles to this file, and also import other style files */
+@use './app/styles/overrides.scss';
+@use './app/pages/login/login.component.scss';
+
+
+@tailwind components;
+@tailwind base;
+@tailwind utilities;
+@font-face {
+    font-family: 'Gilroy SemiBold' !important;
+    src: url('/angular-app-myself/public/fonts/gilroy-semibold_freefontdownload_org\ \(1\).zip');
+}
+
+
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: 'Gilroy Semibold', sans-serif !important; overflow-x: hidden;}
+
+
+.custom-svg {
+    transform: rotateX(180deg);
+}
+
+.closed-height {
+    height: 120px;
+    overflow: hidden;
+  }
+
+.auto-height {
+    overflow: auto;
+    height: 1000px;
+}
+
+
+.login-bg-el {
+ min-height: 100vh;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.login-grid {
+  z-index: -10;
+}
+
+.rounded-icon-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.625rem;
+  border-radius: 50%;  
+  border: 1px solid #d0d5dd;
+}

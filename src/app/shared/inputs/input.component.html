@@ -1,0 +1,10 @@
+<div #inputContainer  class="flex items-center gap-2 py-[10px] px-[12px] bg-[#F9FAFB] rounded-[8px] border border-[#D0D5DD] ">
+  <mat-icon class="min-w-6" svgIcon="custom-email"></mat-icon>
+  <input [attr.type]="isPasswordHidden() ? 'password' : 'text'" [placeholder]="placeholder()" (focus)="onFocus()" (blur)="onBlur()" class="w-full text-[15px] outline-none" >
+
+
+    <button *ngIf="type() === inputTypes.password" type="button" class="h-6" (click)="togglePasswordVisibility()">
+      <mat-icon [svgIcon]="isPasswordHidden() ? 'eye-closed' : 'eye-opened'"></mat-icon>
+    </button>
+  
+</div>

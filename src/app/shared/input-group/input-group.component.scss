@@ -1,0 +1,20 @@
+.input-style {
+    @apply bg-[#ECFDF3] flex justify-center w-[54px] text-center items-center border border-solid border-[#C8CCE5] rounded-[10px] outline-none py-[10px] px-[5px];
+
+    &:focus {
+        border: 1px solid blue;
+    }
+
+    &.active {
+        @apply border-[#6CE9A6];
+        
+      }
+    
+      &:not(&.active) {
+        @apply border-gray-200;
+      }
+}
+
+.active {
+    border: 1px solid #12B76A;
+}

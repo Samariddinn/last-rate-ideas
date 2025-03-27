@@ -1,0 +1,6 @@
+<mat-tab-group mat-stretch-tabs="false" class="my-3 ">
+    @for (tab of tabs(); track tab) {
+      <mat-tab [label]="tab.label">Content</mat-tab>
+    }
+  </mat-tab-group>
+  

@@ -1,0 +1,10 @@
+<div class="m-6">
+    <app-navbar />
+
+    <div class="flex items-end my-[15px] justify-end">
+        <button (click)="openDialog()" mat-button  class="custom-icon-button !bg-[#02BF67]"><span class="!text-white">Add</span></button>
+    </div>
+    <app-tab [tabs]="tabs()"/>
+
+    <app-modal [canReact]="false" [canRemove]="true" [title]="'Favourite ideas'" />
+</div>
